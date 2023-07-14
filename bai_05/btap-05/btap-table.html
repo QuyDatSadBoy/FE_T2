@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bài tập về table</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
+            .table-1,
+            th,
+            td,
+            tr {
+                font-family: 'Roboto', sans-serif;
+                padding: 0px;
+                margin: 0px;
+                border-spacing: 0px;
+            }
+
+            th,
+            td {
+                padding: 10px 20px;
+                text-align: left;
+            }
+
+            .tr-1 th {
+                background-color: #01987A;
+                color: white;
+
+            }
+
+            .table-1 td {
+                border-bottom: 1px solid #DDDDDD;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2>Bài tập về table</h2>
+        <p><strong>Yêu cầu:</strong> Code table như dưới đây, dùng font Roboto trên trang google font.</p>
+        <table class="table-1">
+            <thead>
+                <tr class="tr-1">
+                    <th>ID</th>
+                    <th>Họ tên</th>
+                    <th>Giới tính</th>
+                    <th>Tuổi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Lê Văn A</td>
+                    <td>Nam</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Lê Thị B</td>
+                    <td>Nữ</td>
+                    <td>22</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Lê Văn C</td>
+                    <td>Nam</td>
+                    <td>26</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+
+</html>

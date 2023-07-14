@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- the a la ancho mo neo chuyen huong den trang khac -->
+    <!-- herf la link lien ket 
+    thuoc tinh target: 
+    _blank la mo tab moi -->
+    <p>
+      Xem tài liệu :<a href="https://www.google.com/" target="_self">Tại đây!</a>
+    </p>
+    <p>
+      Xem tài liệu :<a
+        href="https://www.google.com/"
+        target="_blank"
+        title="Đây là link sang gogle.com">Tại đây!</a>
+      "Mở ở tap mới"
+    </p>
+
+    <!-- thẻ img để chèn ảnh vào web 
+    thuộc tính src là link ảnh
+    thuộc tính alt là nếu ảnh bị lỗi -->
+    <img
+      src="https://www.bing.com/th?id=OIP.0ME-eXDd8x9v6wxCbfiSwAHaLi&w=120&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+      />
+    <img
+      src="ttps://www.bing.com/th?id=OIP.0ME-eXDd8x9v6wxCbfiSwAHaLi&w=120&h=185&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2"
+      alt="Đây là ảnh girl"
+      />
+    <img src="../bai_01/oke.jpg" alt="Đây là trần quý đạt" />
+    <img src="/bai_02/qd/oke.jpg" alt="Trần quý đạt" />
+
+    <!-- Bấm vào logo và chuyển sang trang web kết hợp thẻ a và img -->
+    <a href="https://28tech.com.vn/lap-trinh-thi-dau.html" target="_blank">
+      <img src="https://28tech.com.vn/assets/img/logo.png"
+        /></a>
+
+    <!-- thẻ video width/height là rộng cao
+    controls là điều khiển loop là lặp lại
+    src là đường dẫn video -->
+    <!-- autoplay là tự động phát video
+    muted tắt tiếng -->
+    <video width="320" height="240" controls autoplay muted>
+      <source src="tranquydat.mp4" type="video/mp4" />
+    </video>
+
+    <!-- thẻ audio -->
+    <audio controls autoplay loop muted>
+      <source src="cứu_vãn.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- thẻ table gồm thead và tbody
+    tr xác định 1 hàng
+    th là chia cột ở hàng 1
+    td là chia cột ở hàng sau -->
+    <!-- mã lệnh html jup có vạch kẻ chia hàng cột -->
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+      th,
+      td {
+        padding: 10px;
+      }
+    </style>
+    <!-- <table>
+      <thead>
+        <tr>
+          <th>STT</th>
+          <th>HỌ TÊN</th>
+          <th>Số Điện Thoại</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Trần Quý Đạt</td>
+          <td>0968575393</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Đinh Thị Thúy Lương</td>
+          <td><small>0999999999</small></td>
+        </tr>
+      </tbody>
+    </table> -->
+    <table>
+      <thead>
+        <tr>
+          <th>Level1</th>
+          <th>Level2</th>
+          <th>level3</th>
+          <th>info</th>
+          <th>name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="6">System</td>
+          <td rowspan="4">system apps</td>
+          <td rowspan="3">systeam env</td>
+          <td>app test</td>
+          <td>foo</td>
+        </tr>
+        <tr>
+          <td>app memory</td>
+          <td>foo</td>
+        </tr>
+        <tr>
+          <td>app test</td>
+          <td>bar</td>
+        </tr>
+        <tr>
+          <td>systemenv2</td>
+          <td>app test</td>
+          <td>bar</td>
+        </tr>
+        <tr>
+          <td rowspan="2">system memory</td>
+          <td rowspan="2">memory test</td>
+          <td>memory func</td>
+          <td>foo</td>
+        </tr>
+        <tr>
+          <td>apes test</td>
+          <td>foo</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <!-- url giới hạn 2048 ký tự -->
+        <form action="https://www.w3schools.com/action_page.php"
+            target="_blank" method="get" autocomplete="off" novalidate>
+            <!-- label nhãn cho người dùng hiểu -->
+
+            <!-- <label for="fullname">Họ tên:</label>
+            <input id="fullname" name="ho_ten" type="email">
+
+
+            <label for="oke">Màu sắc</label>
+            <select id="oke" name="color" size="3" multiple>
+                <option value="yellow">Màu vàng</option>
+                <option value="red" selected>Màu đỏ</option>
+                <option value="black">Màu đen</option>
+            </select> -->
+            <!-- <input type="submit" value="gửi"> -->
+            <label for="oke2">Nhiều dòng</label>
+            <br>
+            <textarea id="oke2" name="Ho" rows="5" cols="30"></textarea>
+            <!-- <input type="submit" value="Gửi"> -->
+            <button>Gửi</button>
+        </form>
+
+        <!-- attributes thuộc tính method 
+        -get nối dữ liệu vào url
+        -post dữ liệu không được hiển thị trong url -->
+        <form action="https://www.w3schools.com/action_page.php"
+            target="_blank">
+            <label for="c">Ngôn ngữ C</label>
+            <input type="checkbox" name="language" id="c" value="c">
+            <br>
+            <input type="checkbox" name="language" id="java" value="java">
+            <label for="java">Ngôn ngữ java</label>
+            <br>
+            <input type="range" name="volume" min="0" max="100" step="5">
+            <br>
+            <input type="color" name="color">
+
+            <input type="text" name="cccd" value="001203045326" readonly>
+            <br>
+            <input type="text" name="ho_ten" min="1" max="5"
+                placeholder="họ_tên" v required>
+            <!-- nếu không thik dùng label thì dùng placeholder -->
+            <button>Gửi</button>
+        </form>
+    </body>
+</html>

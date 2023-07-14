@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Làm việc với Number</title>
+    </head>
+
+    <body>
+        <script>
+            // hàm isNaN() kiểm tra 1 biến có phải là NaN hay không
+            // Viết tắt của Not a Number được sử dụng để đại diện cho những trường hợp tính toán sai
+            // hoặc kết quả của phép tính không xác định
+            var a = 10;
+            var b = "luog";
+            var result = a / b;
+            console.log(result);
+            console.log(isNaN(result));
+
+            // hàm toString()
+            // Cú pháp: tenBien.toString()
+            var c = a.toString();
+            console.log(typeof c);
+
+            // hàm toFixed làm tròn số thập phân
+            // cú pháp : tenBien.toFixed(digits) trong đó digits là số chữ số sau dấu thập phân 
+            var d = 12.5446;
+            console.log(d.toFixed()); // in ra 13 ko điền mặc định là 0
+            console.log(d.toFixed(1)); // trả về 12.5
+            console.log(d.toFixed(3)); // trả về 12.545
+
+            // hàm toString cú pháp: array.toString() tự thêm dấu phảy 
+            var list = ["Java", "C++", "Javascript"];
+            console.log(list.toString()); // trả về Java,C++,Javascript
+            // hàm join() được thêm ký tự mà mik muốn phân cách
+            console.log(list.join("*"));
+
+            // hàm pop xóa đi phần tử cuối mảng và trả về phần tử cuối của mảng đó
+            // đây là tham chiếu sẽ xóa luôn phần tử trong mảng
+            console.log(list.pop());
+            console.log(list);
+
+            // hàm push thêm phần tử mới vào mảng trả về độ dài mới của mảng
+            // Đây cũng là tham chiếu nhé
+
+            // hàm shift xóa phần tử đầu mảng và trả về phần tử đó 
+            // Đây là tham chiếu
+            // Hàm inShift thêm vào đầu mảng . Trả về độ dài mới của mảng
+
+            // Hàm splice() Xóa hoặc thêm phần tử mới vào mảng trả về mảng bị xóa
+            // array.splice(index.số phần tử bị xóa ,các phần tử được thêm)
+
+            console.log(list.splice(2, 0, "Python", "ReactJs")); // trả về []
+
+            // Hàm concat() dùng để nối 2 mảng không làm ảnh hưởng đến mảng ban đầu
+            var list2 = ["c", "c++", "reactJs"];
+            console.log(list.concat(list2));
+
+            // hàm slice cắt các phần tử không làm ảnh hưởng đến hàm ban đầu
+            // để 1 số là từ số đó đến hết 
+            // phần tử cuối là -1
+            console.log(list2.slice(-3, -1));
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>String</title>
+    </head>
+
+    <body>
+        <script>
+            // hàm length
+            var name = "Trần Quý Đạt Đạt";
+            console.log(name.length);
+            // hàm indexOf trả về vị trí đầu tiên tìm được nếu không tìm được trả về -1
+            console.log(name.indexOf("Quý", 0));
+            // hàm lastIndexOf
+            console.log(name.lastIndexOf("Đạt"));
+            // hàm slice dùng để cắt 1 chuỗi và trả về 1 chuỗi mới
+            // string.slice(start,end)
+            // string.slice(-1) lấy vị trí cuối
+            // string.slice(0) lấy toàn bộ chuỗi
+            console.log(name.slice(0, 4));
+
+            // hàm replace 
+            // thay thế 1 chuỗi thành chuỗi mới
+            // muốn thay thế tất ta phải dùng regular expression biểu thức chính quy
+            console.log(name.replace("Đạt", "Lug"));
+            console.log(name);
+            // Ta thấy nó không phải tham chiều mà là tham trị :))
+            console.log(name.replace(/Đạt/g, "Lug"));
+            console.log(name);
+
+            // toUpperCase() và toLowerCase() để viết hoa hết và thường hết
+            console.log(name.toUpperCase());
+            console.log(name);
+            console.log(name.toLowerCase());
+            console.log(name);
+
+            // hàm trim() cắt khoảng trắng ở 2 đầu
+            // hàm charAt() lấy ra ký tự ở index cần lấy
+
+            // hàm split chuyển 1 chuỗi thành một array , nhưng cần tìm ra điểm chung của chuỗi đó
+            // ví dụ:
+            var list = "Javascript, java, python";
+            console.log(list.split()); // cả string là 1 phần tử
+            console.log(list.split("")); // Mỗi ký tự là 1 phần tử
+            console.log(list.split(", ")); // Mỗi từ là 1 phần tử
+            console.log(list.split(", ", 2)); // Mỗi từ là 1 phần tử lấy tối đa 2 phần tử
+        </script>
+    </body>
+
+</html>

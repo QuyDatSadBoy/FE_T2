@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lý thuyết flex box</title>
+    </head>
+
+    <body>
+        <style>
+            body {
+                margin: 0px;
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .container {
+                background-color: purple;
+                border-radius: 5px;
+                padding: 20px;
+                height: 300px;
+            }
+
+            .item {
+                border: 3px solid #fff;
+                font-size: 20px;
+                text-align: center;
+                padding: 10px;
+                margin: 10px;
+                width: 150px;
+                background-color: aqua;
+                border-radius: 5px;
+                height: 150px;
+            }
+
+            /* flex thì chiều rộng box cha vẫn là 100% */
+            .container {
+                display: flex;
+                flex-direction: row;
+                align-items: stretch;
+            }
+
+            /* inline flex thì chiều rộng box cha bằng các box con */
+            /* flex-direction sắp xếp từ trái sang phải mặc định là row */
+            /* row-reverse  sắp xếp từ phải qua trái */
+            /* còn giá trị column , column reverse  */
+            .container {
+                flex-wrap: wrap;
+            }
+
+            /* mặc định là nowrap không xuống dòng */
+            /* wap-reverse:thay vì xuống dòng thì nhảy lên trên */
+            /* justify-content:flex-start item sẽ bắt đầu từ lề chính main start là giá trị mặc định */
+            /* flex-end sẽ không đảo vị trí  */
+            .container {
+                justify-content: center;
+            }
+
+            /* center là các item nằm giữa */
+            /* space-beetween khoảng cách giữa các item bằng nhau item đầu và cuối sát lề */
+            /* space-around khoảng cách giữa item với lề bằng 1/2 giữa item với item */
+            /* space-evenly khoảng cách giữa item với lề bằng khoảng cách giữa item với item */
+
+            /* khác với justify-content align-items căn theo trục cross-axis */
+            /* mặc định stretch các phần tử sẽ tự động tăng chiều cao để lấp đầy chiều cao của container nhưng sẽ ưu tiên height nếu có */
+            /* flex-start và flex-and sẽ căn theo dòng có thể hiểu như vậy */
+            /* các giá trị khác như center  */
+
+            /* align-content dùng cho nhiều dòng có 4 giá trị như align-items
+            stretch flex-start flex-end center */
+            /* vẫn còn các giá trị space-between space-around space-evenly */
+
+
+            /*align-self: auto là giá trị mặc định */
+            .item:nth-child(2) {
+                align-items: flex-start;
+            }
+
+            /* tiếp theo là align-self áp dụng cho 1 item nào đó */
+
+            /* Thuộc tính cuối cùng order sắp xếp lại vị trí các item */
+            .item:nth-child(1) {
+                order: 0;
+            }
+
+            .item:nth-child(2) {
+                order: 1;
+            }
+        </style>
+        <div class="container">
+            <div class="item">Item1</div>
+            <div class="item">Item2</div>
+            <div class="item">Item3</div>
+        </div>
+    </body>
+
+</html>

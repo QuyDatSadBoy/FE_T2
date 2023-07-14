@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+
+        <script>
+            function add(a, b) {
+                return a + b;
+            }
+            var result = add(10, 20);
+            console.log(result);
+
+            function add2() {
+                console.log(arguments);
+                let tong = 0;
+                for (item of arguments) {
+                    tong += item;
+                    console.log(item);
+                }
+                return tong;
+            }
+            console.log(add2(10, 20, 30));
+
+            // nếu khai báo biến var trong if else thì bên ngoài gọi được
+            // còn khai báo trong hàm thì không gọi được
+            // hàm B được định nghĩa trong A thì chỉ gọi được ở trong hàm A thôi
+            // các cách viết hàm
+
+            // cách 1 : Declaration function (Hàm định nghĩa)
+            // có tính hoisting tức là gọi được hàm trước lúc khai báo hàm đó
+            // là cách viết hàm như bình thường
+
+            // cách 2 : Expression function (hàm biểu thức)
+            // không có tính hoisting nếu gọi hàm trước lúc khai báo sẽ bị lỗi
+            // cú pháp  var tenHam = function(thamSo1,thamSo2,...){
+            // code
+            //}
+
+            // cách 3 : arrow function ko có tính hositong
+            // cú pháp var tenHam = (thamSo1,thamSo2,...) => {
+            // code
+            //}
+            // arrow function không có arguments mà phải dùng spread
+        </script>
+    </body>
+
+</html>

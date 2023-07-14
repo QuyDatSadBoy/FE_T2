@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập buổi 2</title>
+  </head>
+
+  <body>
+    <h2>Câu 1: Bài tập về thẻ a</h2>
+    <p> <a href="https://www.google.com/" target="_self">Viết dòng này bằng
+        thẻ a. Khi click vào link sang trang google.com</a></p>
+    <p> <a href="https://www.google.com/" target="_blank">Viết dòng này bằng
+        thẻ a. Khi click vào link sang trang
+        google.com ở trong tab mới</a></p>
+    <h2>Câu 2: Bài tập về thẻ img</h2>
+    <p><strong>Yêu cầu: </strong> Tạo thư mục đặt tên là images, sau đó để
+      hình ảnh bất kỳ vào thư mục images đó. Tiếp theo, chèn hình ảnh đó
+      vào trang web bằng cách sử dụng thẻ img. Đường dẫn ảnh là dạng
+      relative (Đường dẫn tương đối).</p>
+    <img
+      src="https://frontend.daca.vn/lessons/lesson-2/images/khoa-hoc-front-end.jpg"
+      alt="Đây là thẻ 28tech">
+    <h2>Câu 3: Bài tập thẻ video</h2>
+    <p><strong>Yêu cầu:</strong>Tạo thư mục đặt tên là videos, sau đó để
+      video bất kỳ vào thư mục videos đó. Tiếp theo, chèn video đó vào
+      trang web bằng cách sử dụng thẻ video và thẻ source. Đường dẫn video
+      là dạng relative (Đường dẫn tương đối). Đặt kích thước video có
+      width bằng 720 và height bằng 405 (tương đương tỷ lệ 16/9).</p>
+    <video width="720" height="405" controls autoplay muted>
+      <source src="https://frontend.daca.vn/lessons/lesson-2/videos/video-1.mp4"
+        type="video/mp4">
+    </video>
+    <h2>Câu 4: Bài tập về thẻ table</h2>
+    <p><strong>Yêu cầu:</strong>Dùng thẻ table, thead, tbody, tr, th, td đã
+      được học để vẽ bảng sau:</p>
+    <p><strong>Lưu ý:</strong> Copy đoạn code sau vào file để có thêm đường
+      viền cho table. Phần này chưa học nhưng thêm vào cho dễ nhìn.</p>
+    <pre>
+        &ltstyle&gt
+             table, tr, th, td {
+                  border: 1px solid #ddd;
+             }
+    
+             th, td {
+                  padding: 10px;
+             }
+        &lt/style&gt
+        </pre>
+    <p></p>
+    <style>
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+
+      th,
+      td {
+        padding: 10px;
+      }
+    </style>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="3">Hóa đơn số 1234</th>
+          <th>Ngày 20/11/2022</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">
+            <p><strong>Thông tin khách hàng</strong></p>
+            <p>Họ tên:Đặng Phương Nam</p>
+            <p>Số điện thoại:0123456789</p>
+            <p>Địa chỉ: số 123,đường Abc, thành phố Hà Nội.</p>
+          </td>
+          <td colspan="2">
+            <p><strong>Thông tin vận chuyển đơn hàng</strong></p>
+            <p>Họ tên:Đặng Phương Nam</p>
+            <p>Số điện thoại:097654321</p>
+            <p>Địa chỉ:số 234,đường Xyz,thành phố Hà Nội</p>
+          </td>
+        </tr>
+        <tr>
+          <td><b>Tên sản phẩm</b></td>
+          <td><b>Số lượng</b></td>
+          <td><b>Đơn giá</b></td>
+          <td><b>Thành tiền</b></td>
+        </tr>
+        <tr>
+          <td>Giày nam cao cấp</td>
+          <td>2</td>
+          <td>800.000đ</td>
+          <td>1.600.000đ</td>
+        </tr>
+        <tr>
+          <td>Giày nữ cao cấp</td>
+          <td>1</td>
+          <td>500.000đ</td>
+          <td>1.000.000đ</td>
+        </tr>
+        <tr>
+          <td colspan="3"><b>Tạm tính</b></td>
+          <td>2.600.000đ</td>
+        </tr>
+        <tr>
+          <td colspan="3"><b>Thuế VAT 10%</b></td>
+          <td>260.000đ</td>
+        </tr>
+        <tr>
+          <td colspan="3"><b>Tổng tiền</b></td>
+          <td>2.860.000đ</td>
+        </tr>
+      </tbody>
+    </table>
+    <h2>Câu 5: Bài tập về thẻ ul,ol,li</h2>
+    <p><strong>Yêu cầu: </strong>Tạo danh sách sau sử dụng thẻ ul,li</p>
+    <ul>
+      <li>Facebook</li>
+      <li>Twitter</li>
+      <li>Intagram</li>
+      <li>Youtobe</li>
+    </ul>
+    <p><b>Yêu cầu: </b>Tạo danh sách sau sử dụng thẻ ol,li</p>
+    <ol type="1">
+      <li>Thời trang</li>
+      <li>Công nghệ</li>
+      <li>Đồ điện tử</li>
+      <li>Đồ gia dụng</li>
+    </ol>
+    <p><strong>Yêu cầu:</strong> Tạo danh sách sau sử dụng thẻ ol, li. Có kiểu
+      là chữ La mã viết hoa</p>
+    <ol type="I">
+      <li>Học HTML 5</li>
+      <li>CSS3</li>
+      <li>Học Boottrap 4</li>
+      <li>Học Javascript</li>
+    </ol>
+    <h2>Câu 6: Bài tập về class và id</h2>
+    <p><b>Yêu cầu:</b>Viết đoạn văn dưới đây và làm theo nội dung bên trong nó.</p>
+    <div class="test-class">Viết đoạn văn này sử dụng thẻ div. Sau đó thêm class
+      có giá trị là "test-class" vào thẻ div này.</div>
+    <div id="test-id">Viết đoạn văn này sử dụng thẻ div. Sau đó thêm id có giá
+      trị là "test-id" vào thẻ div này.</div>
+  </body>
+
+</html>

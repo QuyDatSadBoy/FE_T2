@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>if_Else</title>
+    </head>
+
+    <body>
+        <script>
+            var result = prompt("Mời bạn nhập tuổi 18 hoặc 20 ?", "Trần Quý Đạt");
+            if (result == 18) {
+                console.log("Bạn đã đủ tuổi đi tù");
+            } else {
+                console.log("Bạn chưa đủ tuổi đi tù!");
+            }
+            console.log(result);
+            var result1 = 20;
+            switch (result) {
+                case "18": {
+                    console.log("Nếu là nữ bạn đã đủ tuổi lấy chồng!");
+                    break;
+                }
+                case "20":
+                    console.log("Nếu bạn là con trai bạn đã đủ tuổi lấy chồng!");
+                    break;
+
+                default:
+                    console.log("Bạn nhập không đúng yêu cầu rồi");
+                    break;
+            }
+
+            // for giống trong c++
+            // for in thường dùng cho object
+            var inFoUser = {
+                fullname: "Trần Quý Đạt",
+                age: 18,
+                email: "dathanu123456780913@gmail.com",
+                phone: "0968575393"
+            };
+
+            for (key in inFoUser) {
+                console.log(key, inFoUser[key]);
+            }
+
+            // for of dùng cho array và string không dùng cho object
+            // lấy ra từng phần tử của array hay string
+            var list = [
+                "Trần Quý Đạt",
+                "Đttl",
+                "Cố gắng vì em",
+            ];
+            // item có thể là 1 object
+            var list2 = [{
+                    name: "Trần Quý Đạt",
+                    age: 20
+                },
+                {
+                    name: "Nguyễn Thị L",
+                    age: 19
+                },
+                {
+                    name: "Mãi là em",
+                    age: 20
+                }
+            ];
+            for (item of list2) {
+                console.log(item);
+            }
+
+            // vòng lặp while
+            // cách đặt tên biến hay dùng camelCase
+
+            // khai báo biến tạm thời dùng let
+            for (let i = 0; i < 10; i++) {
+                console.log(i);
+            }
+            // const hằng số 
+            const pi = 3.14;
+        </script>
+    </body>
+
+</html>

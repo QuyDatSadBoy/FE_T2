@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data_type trong javascipt</title>
+    </head>
+
+    <body>
+        <script>
+            // hàm
+            function sum(a, b) {
+                alert(a + b);
+                console.log(a + b);
+            }
+            sum(10, 20);
+            //Kiểu dữ liệu phức tạp
+            // có 2 kiểu là object và array
+            // Ví dụ về object 
+            var inFoUser = {
+                name: "Trần Quý Đạt",
+                age: 18,
+                email: 'dathanu123456780913@gmail.com',
+                phone: '0968575393',
+                sum1: function (a, b) {
+                    alert("Trần Quý Đạt " + (a + b));
+                    console.log("Trần Quý Đạt sẽ cố gắng");
+                }
+            };
+            console.log(inFoUser);
+            console.log(inFoUser.age);
+            console.log(inFoUser.sum1(10, 20));
+
+            // object thì có key và value còn array thì chỉ có value
+            // Ví dụ về array
+            var listUser = [
+                "Trần Quý Đạt",
+                "Đttl",
+                "Đỗ Văn C",
+            ];
+            console.log(listUser[0]);
+            listUser.sum = function (a, b) {
+                console.log("đây là hàm trong mảng");
+            }
+            // có thể thêm key value cho mảng
+            listUser.oke = false;
+            listUser.sum(10, 1);
+            console.log(listUser.oke);
+        </script>
+    </body>
+
+</html>

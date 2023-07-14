@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Built-in</title>
+    </head>
+
+    <body>
+
+        <script>
+            // built-in là hàm được định nghĩa sẵn
+            // 1 : alert();
+            // 2 : confirm giống alert nhưng có thêm yes or no
+
+            var answer = confirm("Bạn có biết Trần Quý Đạt không ?");
+            console.log(answer);
+
+            // 3 : prompt() lấy thông tin người dùng
+            // gồm có 2 tham số truyền vào là nội dung thông báo và giá trị ban đầu
+            // cú pháp prompt(title,defaultValue);
+            // defaultvalue là giá trị mặc đinh không bắt buộc
+            // ví dụ prompt
+            const name = prompt("nhập vào tên của bạn", "Trần Quý Đạt");
+            if (name == null) {
+                alert("Bạn không nhập tên");
+            } else {
+                alert("Tên của bạn là: " + name);
+            }
+            // console để debug
+            console.warn("In ra cảnh báo");
+            console.error("In ra lỗi sai");
+
+            // 5 : Hàm setTimeout
+            // code sẽ chạy 1 lần duy nhất sau 1 khoảng time
+            setTimeout(function () {
+                alert("Bạn vừa đợi 2s!");
+            }, 100);
+
+            // 5.2 : Thay setTimeout bằng setInterval
+            // lặp lại sau 1 time
+
+            // var counter = 0;
+            // setInterval(function () {
+            //     console.log(counter);
+            //     counter++;
+            // }, 100)
+
+            var a = null;
+            console.log(typeof a);
+        </script>
+    </body>
+
+</html>
