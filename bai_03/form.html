@@ -1,57 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
 
-        <!-- url giới hạn 2048 ký tự -->
-        <form action="https://www.w3schools.com/action_page.php"
-            target="_blank" method="get" autocomplete="off" novalidate>
-            <!-- label nhãn cho người dùng hiểu -->
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
 
-            <!-- <label for="fullname">Họ tên:</label>
-            <input id="fullname" name="ho_ten" type="email">
+<body>
+
+  <form action="https://www.w3schools.com/action_page.php" target="_blank" method="GET" autocomplete="off" novalidate>
+
+    <!-- <label for="fullName">Họ tên:</label>
+    <input id="fullName" name="ho_ten" type="text">
+
+    <label for="">Màu sắc:</label>
+    <select name="color" size="3" multiple>
+      <option value="yellow">Màu vàng</option>
+      <option value="red" selected>Màu đỏ</option>
+      <option value="black">Màu đen</option>
+    </select> -->
+
+    <!-- <textarea name="note" rows="5" cols="20"></textarea> -->
+
+    <!-- <input name="mat_khau" type="password"> -->
+    <!-- <input name="so_luong" type="number"> -->
+    <!-- <input name="ngayDi" type="date">
+    <input name="thoiGianDi" type="time">
+    <input name="ngayVe" type="date">
+    <input name="thoiGianVe" type="time"> -->
+
+    <!-- <input name="ngayDi" type="datetime-local">
+    <input name="ngayVe" type="datetime-local"> -->
+
+    <!-- <input name="upload_file" type="file"> -->
+
+    <!-- <input type="submit" value="Gửi"> -->
+
+    <!-- <button>Gửi</button> -->
+
+  </form>
 
 
-            <label for="oke">Màu sắc</label>
-            <select id="oke" name="color" size="3" multiple>
-                <option value="yellow">Màu vàng</option>
-                <option value="red" selected>Màu đỏ</option>
-                <option value="black">Màu đen</option>
-            </select> -->
-            <!-- <input type="submit" value="gửi"> -->
-            <label for="oke2">Nhiều dòng</label>
-            <br>
-            <textarea id="oke2" name="Ho" rows="5" cols="30"></textarea>
-            <!-- <input type="submit" value="Gửi"> -->
-            <button>Gửi</button>
-        </form>
 
-        <!-- attributes thuộc tính method 
-        -get nối dữ liệu vào url
-        -post dữ liệu không được hiển thị trong url -->
-        <form action="https://www.w3schools.com/action_page.php"
-            target="_blank">
-            <label for="c">Ngôn ngữ C</label>
-            <input type="checkbox" name="language" id="c" value="c">
-            <br>
-            <input type="checkbox" name="language" id="java" value="java">
-            <label for="java">Ngôn ngữ java</label>
-            <br>
-            <input type="range" name="volume" min="0" max="100" step="5">
-            <br>
-            <input type="color" name="color">
+  <!-- <form action="https://www.w3schools.com/action_page.php" target="_blank">
+    <p>Những ngôn ngữ lập trình bạn đã học:</p>
 
-            <input type="text" name="cccd" value="001203045326" readonly>
-            <br>
-            <input type="text" name="ho_ten" min="1" max="5"
-                placeholder="họ_tên" v required>
-            <!-- nếu không thik dùng label thì dùng placeholder -->
-            <button>Gửi</button>
-        </form>
-    </body>
+    <input type="checkbox" id="ngonNguC" name="language" value="c">
+    <label for="ngonNguC"> Ngôn ngữ C</label><br>
+
+    <input type="checkbox" id="ngonNgujava" name="language" value="java">
+    <label for="ngonNgujava"> Ngôn ngữ Java</label><br>
+
+    <input type="checkbox" id="ngonNguPhp" name="language" value="php">
+    <label for="ngonNguPhp"> Ngôn ngữ PHP</label>
+
+    <br>
+    <br>
+
+    <input type="submit" value="Gửi">
+  </form> -->
+
+
+  <!-- <form action="https://www.w3schools.com/action_page.php" target="_blank">
+    <p>Chọn ngôn ngữ bạn thích nhất:</p>
+
+    <input type="radio" id="ngonNguC" name="language" value="c">
+    <label for="ngonNguC"> Ngôn ngữ C</label><br>
+
+    <input type="radio" id="ngonNgujava" name="language" value="java">
+    <label for="ngonNgujava"> Ngôn ngữ Java</label><br>
+
+    <input type="radio" id="ngonNguPhp" name="language" value="php">
+    <label for="ngonNguPhp"> Ngôn ngữ PHP</label>
+
+    <br>
+    <br>
+    
+    <input type="submit" value="Gửi">
+  </form> -->
+
+  <!-- <form action="https://www.w3schools.com/action_page.php" target="_blank">
+    <input type="range" name="volume" min="-10" max="100" step="20">
+    
+    <input type="submit" value="Gửi">
+  </form> -->
+
+  <form action="https://www.w3schools.com/action_page.php" target="_blank">
+    <!-- <input type="color" name="color"> -->
+    <input type="text" name="ho_ten" maxlength="30" placeholder="Họ tên" required>
+    <input type="text" name="cccd" value="0123456789" readonly>
+    <input type="email" name="email" value="levana@gmail.com" disabled>
+    <input type="number" name="so_luong" min="1" max="99" required>
+
+    <input type="submit" value="Gửi">
+  </form>
+</body>
+
 </html>
