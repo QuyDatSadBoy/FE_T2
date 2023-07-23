@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1 Float cơ bản</title>
+    <style>
+        .header {
+            background-color: #CCCCCC;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 30px;
+        }
+
+        .main {
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        .main .item {
+            background-color: #CCCCCC;
+            text-align: center;
+            margin-right: 10px;
+            float: left;
+            height: 600px;
+            font-weight: bold;
+            line-height: 600px;
+            font-size: 30px;
+        }
+
+        .main .clear-both {
+            clear: both;
+        }
+
+        .main .article {
+            width: 50%;
+        }
+
+        .main .sidebar-2 {
+            margin-right: 0;
+        }
+
+        .main .sidebar-2,
+        .sidebar-1 {
+            width: calc(25% - 10px);
+        }
+
+        .footer {
+            margin-top: 10px;
+            background-color: #CCCCCC;
+            text-align: center;
+            font-weight: bold;
+            padding: 10px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">Header</header>
+    <main class="main">
+        <div class="sidebar-1 item">Sidebar 1</div>
+        <div class="article item">Article</div>
+        <div class="sidebar-2 item">Sidebar 2</div>
+        <div class="clear-both"></div>
+    </main>
+    <footer class="footer">Footer</footer>
+</body>
+
+</html>
