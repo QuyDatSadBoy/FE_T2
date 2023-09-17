@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js nâng cao 2</title>
+  </head>
+  <body>
+    <div class="list" id="list"></div>
+
+    <script>
+      //   let object0 = {
+      //     fullName: "Trần Quý Đạt",
+      //     age: 18,
+      //   };
+
+      //   let object = `
+      //   {
+      //     "fullName": "Trần Quý Đạt",
+      //     "age": 18
+      //   }`;
+      //   let parseJson = JSON.parse(object);
+      //   let convertJson = JSON.stringify(object0);
+      //   console.log(typeof convertJson);
+      //   console.log(typeof parseJson);
+
+      a = `[
+        {
+            "fullName":"Trần Quý Đạt",
+            "age":18
+        },
+        {
+            "fullName":"Nguyễn Hà An Hy",
+            "age":17
+        }
+    ]`;
+      convertString = JSON.parse(a);
+      console.log(typeof convertString);
+      var html = "";
+      for (let x of convertString) {
+        html += `
+            <div class="item">
+                <div class="inner-name">${x.fullName}</div>
+                <div class="inner-age">${x.age}</div>
+           </div>
+        `;
+      }
+      const list = document.querySelector("#list");
+      list.innerHTML = html;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Js nâng cao 2</title>
+</head>
+
+<body>
+  <script>
+    // var a = 10;
+    // var promise = new Promise((resolve, reject) => {
+    //   if (a !== undefined && a !== null) {
+    //     resolve(a);
+    //   } else reject(a);
+    // });
+    // promise
+    //   .then((success) => {
+    //     console.log("Thành công a =", success);
+    //     return success + 5;
+    //   })
+    //   .then((success) => {
+    //     console.log("Thành công a =", success);
+    //   })
+    //   .catch((error) => {
+    //     console.error("Failed", error);
+    //   })
+    //   .finally(() => {
+    //     console.log("Luôn vào đây");
+    //   });
+
+
+    let a = 10;
+    let b = 20;
+    let c = 30;
+    let d = 40;
+    let e = 50;
+    let f = 60;
+    let sum1 = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(a + b);
+      }, 2000)
+    });
+
+    let sum2 = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(c + d);
+      }, 4000)
+    });
+
+    let sum3 = new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve(e + f);
+      }, 6000)
+    });
+
+    Promise.all([sum1, sum2, sum3])
+      .then(([sum1, sum2, sum3]) => {
+        console.log(sum1 + sum2 + sum3);
+      })
+
+      .catch((error) => {
+        console.error(error);
+      })
+  </script>
+</body>
+
+</html>

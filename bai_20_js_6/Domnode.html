@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="ads" id="ads"></div>
+
+    <script>
+      const newNode = document.createElement("div");
+      newNode.innerHTML = "Quảng cáo ....";
+      console.log(newNode);
+
+      const ads1 = document.querySelector("#ads");
+      ads1.appendChild(newNode);
+
+      //nodeParent.insertBefore(nodeInsert,nodeChild);
+      //   parent.removeChild(newNode);
+      // parent.replaceChild(newNode,nodeDelete);
+    </script>
+  </body>
+</html>

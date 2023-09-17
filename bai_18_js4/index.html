@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Js Buổi 4</title>
+  </head>
+
+  <body>
+    <!-- <button onclick="openTab()">Click</button>
+    <button onclick="closeTab()">Close Tab</button> -->
+    <button onclick="login()">Login</button>
+
+    <!-- Bom window -->
+    <!-- <script>
+      //   console.log(window);
+      //   console.log(window.innerHeight);
+      // thấy được chiều cao chiều rộng của vw
+      let tab;
+      function openTab() {
+        tab = window.open(
+          "https://www.youtube.com/watch?v=yyzJ8ps3_HI",
+          "_blank",
+          "width = 1200 , height = 600 , top = 200 ,left = 300"
+        );
+      }
+      function closeTab() {
+        tab.close();
+      }
+      let href = window.location.href;
+      console.log(href);
+    </script> -->
+
+    <!-- Bom Screen -->
+    <!-- Bom Location -->
+    <script>
+      console.log(screen.width, screen.height);
+      //   location.reload();
+    </script>
+
+    <!-- Bom History -->
+    <!-- <script>
+      let len = history.length;
+      history.back();
+      history.forward();
+      history.go(-1);
+    </script> -->
+
+    <!-- Bom Navigator -->
+    <!-- <script>
+      navigator.cookieEnabled; //: Để kiểm tra trình duyệt có bật Cookie hay không.
+      navigator.appName; //: Để kiểm tra tên trình duyệt
+      navigator.appCodeName; //: Để kiểm tra tên mã code của trình duyệt
+      navigator.appVersion; //: Để kiểm tra Version của trình duyệt
+      navigator.platform; // Xem hệ điều hành mà người dùng đang sử dụng
+      navigator.language; // Để kiểm tra ngôn ngữ của trình duyệt
+    </script> -->
+
+    <!-- Bom Popup -->
+    <!-- nó là các hàm builtin như
+    alert
+    confirm
+    prompt -->
+
+    <!-- Bom Timing
+    <script>
+        setTimeout();
+        setInterval();
+    </script> -->
+
+    <script>
+      function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = cname + "=" + cvalue + "; " + expires;
+      }
+      function login() {
+        if (true) {
+          //   document.cookie =
+          //     "Name = Trần Quý Đạt;expires = Thu, 01 Jan 2025 00:00:00 UTC";
+          //   document.cookie = "Email = dathanu123456780913@gmail.com";
+          setCookie("Name", "Trần Quý Đạt", 1);
+        }
+      }
+
+      function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(";");
+        for (var i = 0; i < ca.length; i++) {
+          var c = ca[i];
+          while (c.charAt(0) == " ") {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
+
+      let allCookies = document.cookie;
+      console.log(allCookies);
+      console.log(getCookie("Name"));
+
+      function deleteCookie(cname) {
+        document.cookie = `${cname}=; expires=Thu, 01 Jan 1970 00:00:00 UTC`;
+      }
+    </script>
+  </body>
+</html>

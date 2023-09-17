@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .menu {
+        background-color: aqua;
+        width: 300px;
+        height: 100vh;
+        position: relative;
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+        font-size: 20px;
+        color: red;
+        display: none;
+      }
+
+      .button {
+        background-clip: border-box;
+        width: 60px;
+        height: 30px;
+        background-color: blueviolet;
+        color: white;
+        font-size: 15px;
+        position: absolute;
+      }
+
+      .menu .button-close {
+        top: 0;
+        right: 0;
+      }
+
+      .button-menu {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+      }
+
+      .show {
+        display: block;
+      }
+    </style>
+
+    <ul class="menu" id="menu">
+      <button class="button button-close" id="button-close">Close</button>
+      <li>Đạt đẹp trai</li>
+      <li>Đạt thông minh</li>
+      <li>Đạt nhất định sẽ có em</li>
+    </ul>
+    <button class="button button-menu" id="button-menu">MENU</button>
+
+    <script>
+      const menu = document.querySelector("#menu");
+      const button_close = document.querySelector("#button-close");
+      const button_menu = document.querySelector("#button-menu");
+
+      button_menu.onclick = function () {
+        menu.classList.add("show");
+      };
+      button_close.onclick = function () {
+        menu.classList.remove("show");
+      };
+
+      //   onchange
+    </script>
+  </body>
+</html>

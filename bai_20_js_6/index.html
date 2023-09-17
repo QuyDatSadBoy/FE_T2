@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .color {
+        background-color: red;
+      }
+    </style>
+
+    <input id="id-1" type="text" placeholder="Họ tên" />
+
+    <script>
+      var input;
+      input = document.querySelector("#id-1");
+      console.log(input);
+
+      input.onblur = function () {
+        input.value = input.value.toUpperCase();
+        input.classList.remove("color");
+      };
+
+      input.onfocus = function () {
+        input.classList.add("color");
+      };
+
+      input.onkeydown = function () {
+        alert("Đây là onkeydown");
+      };
+
+      input.onkeyup = function () {
+        alert("Đây là onkeyup");
+      };
+    </script>
+  </body>
+</html>

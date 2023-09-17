@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      .light {
+        background: lightblue;
+      }
+
+      .dark {
+        background: darkblue;
+        color: #fff;
+      }
+
+      .test-2 {
+        color: blue;
+      }
+    </style>
+
+    <div class="light" id="box" value="Trần Quý Đạt">Nội dung thẻ div</div>
+    <div id="box">Trần Quý Đạt</div>
+
+    <ul id="menu">
+      <li>Mục 1</li>
+      <li>Mục 2</li>
+      <li>Mục 3</li>
+    </ul>
+
+    <h2>Thẻ h2 01</h2>
+    <h2>Thẻ h2 02</h2>
+    <h2>Thẻ h2 03</h2>
+    <h2>Thẻ h2 04</h2>
+    <h2>Thẻ h2 05</h2>
+
+    <h3 class="test">Thẻ 01</h3>
+    <h4 class="test">Thẻ 02</h4>
+    <h2 class="test">Thẻ 03</h2>
+    <h1 class="test">Thẻ 04</h1>
+    <h5 class="test">Thẻ 05</h5>
+
+    <input type="text" value="Trần Quý Đạt" />
+
+    <style>
+      .box-1 .box-2 h2 .link {
+        background-color: yellow;
+      }
+
+      .box-1 .box-2 h2 .link.active {
+        background-color: orange;
+      }
+    </style>
+
+    <div class="box-1">
+      <div class="box-2">
+        <h2>
+          <a href="#" class="link" oke="dat">Nội dung thẻ a</a>
+        </h2>
+        <h2>
+          <a href="#" class="link">Nội dung thẻ a</a>
+        </h2>
+      </div>
+    </div>
+
+    <script>
+      console.log(document);
+      box = document.getElementById("box");
+      console.log(box);
+      box.classList.add("dark");
+      allDiv = document.getElementsByTagName("div");
+      console.log(allDiv);
+      [...allDiv].forEach((item) => {
+        console.log(item);
+      });
+      allDiv2 = document.querySelector(".box-1 .box-2");
+      console.log(allDiv2.innerText);
+      console.log(allDiv2.textContent);
+      tmp = document.querySelector(".box-1 .box-2 a");
+      tmp.style.backgroundColor = "red";
+      console.log(tmp.getAttribute("class"));
+      console.log(tmp.setAttribute("class", "dark"));
+
+      light = document.querySelector("input");
+      console.log(light.value);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+/* Section-one */
+.section-one {
+    padding: 15px;
+    background-color: #F8FCF9;
+}
+
+.section-one .inner-box {
+    padding: 15px;
+}
+
+.section-one .inner-box .inner-icon {
+    color: #5cb874;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.section-one .inner-box .inner-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.section-one .inner-box .inner-title:hover {
+    color: #5CB874;
+    cursor: pointer;
+}
+
+/*End Section-one */
+
+/* Section two */
+
+.section-two {
+    margin: 30px 0;
+}
+
+.section-two .box-head {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-two .box-head .inner-title {
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-two .box-head .inner-title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-two .box-head .inner-title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #5cb874;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.section-two .box-head .inner-desc {
+    color: #9F919F;
+}
+
+.section-two .inner-main .inner-head {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-two .inner-left {
+    order: 1;
+}
+
+
+.section-two .inner-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* End Section two */
